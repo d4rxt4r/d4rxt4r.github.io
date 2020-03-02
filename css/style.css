@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+body {
+  font-size: 16px;
+  max-width: 496px;
+  min-width: 320px;
+  line-height: 1.65;
+  font-family: "Nunito", sans-serif;
+  color: #1a1a1a;
+  background-color: #00bcd4;
+  margin: 0 auto;
+}
+
+.grid-container {
+  padding: 1em 0;
+  margin: 0 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 20% 65% auto;
+      grid-template-rows: 20% 65% auto;
+      grid-template-areas: "header" "main" "footer";
+  gap: 1em;
+}
+
+.header {
+  background-color: #ffffff;
+  position: relative;
+  padding: 1em 1em;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header::after, .header::before {
+  content: "";
+  position: absolute;
+}
+
+.header::after {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 4px;
+  -webkit-transform: skewY(45deg) translate(4px, -2px);
+          transform: skewY(45deg) translate(4px, -2px);
+  background-color: #333;
+}
+
+.header::before {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  -webkit-transform: skewX(45deg) translate(-2px, 4px);
+          transform: skewX(45deg) translate(-2px, 4px);
+  background-color: gray;
+}
+
+.header h2 {
+  display: inline;
+  font-size: 1.1em;
+}
+
+.header button#rebuzz {
+  position: absolute;
+  right: 0;
+  top: .5em;
+  background: none;
+  border: none;
+  outline: 0;
+}
+
+.header button#rebuzz:focus {
+  outline: 0;
+}
+
+.header button#rebuzz i {
+  -webkit-transition: -webkit-transform .1s;
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+}
+
+.header button#rebuzz i:hover {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.main-section {
+  background-color: #ffffff;
+  position: relative;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+  text-align: center;
+}
+
+.main-section::after, .main-section::before {
+  content: "";
+  position: absolute;
+}
+
+.main-section::after {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 4px;
+  -webkit-transform: skewY(45deg) translate(4px, -2px);
+          transform: skewY(45deg) translate(4px, -2px);
+  background-color: #333;
+}
+
+.main-section::before {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  -webkit-transform: skewX(45deg) translate(-2px, 4px);
+          transform: skewX(45deg) translate(-2px, 4px);
+  background-color: gray;
+}
+
+.main-section__item-list {
+  padding-left: 16px;
+  text-align: left;
+  list-style-type: none;
+}
+
+.main-section__item-list li:before {
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f152";
+  color: #1a1a1a;
+  padding-right: 4px;
+}
+
+.main-section a {
+  color: #007888;
+}
+
+.footer {
+  background-color: #ffffff;
+  position: relative;
+  background: #fff url(../img/boy_1.png) no-repeat 100% 20%/100px;
+  padding: 1em 1em;
+}
+
+.footer::after, .footer::before {
+  content: "";
+  position: absolute;
+}
+
+.footer::after {
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 4px;
+  -webkit-transform: skewY(45deg) translate(4px, -2px);
+          transform: skewY(45deg) translate(4px, -2px);
+  background-color: #333;
+}
+
+.footer::before {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  -webkit-transform: skewX(45deg) translate(-2px, 4px);
+          transform: skewX(45deg) translate(-2px, 4px);
+  background-color: gray;
+}
+
+.footer__contacts {
+  margin-bottom: .5em;
+}
+
+.footer__contacts span {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
